@@ -93,7 +93,8 @@ span {
     }
 
     .stats {
-        color: green;
+        color: hsla(0, 0%, 100%, 0.75);
+        ;
     }
 
     .stats_container {
