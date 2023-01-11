@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 0.9375rem;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    background-color: hsl(244, 38%, 16%);
+    max-width: fit-content;
+    border-radius: 0.625rem;
+    margin-right: 1.625rem;
+    margin-left: 1.625rem;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1.5625rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+}
+
+h2 {
+    color: hsla(0, 0%, 100%);
+    text-align: center;
+    padding-bottom: 0.625rem;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+#responsive_img {
+    display: block;
+    max-width: 100%;
+    filter: invert(20%) sepia(29%) saturate(1205%) hue-rotate(233deg) brightness(60%) contrast(80%);
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+}
+
+#main_paragraph {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    line-height: 2;
+    text-align: center;
+    margin: 1.25rem 2.5rem auto 1.25rem;
+}
+
+.stats {
+    color: hsla(0, 0%, 100%, 0.75);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.stats_container {
+    padding: 1.25rem 0rem 1.25rem 0rem;
+}
+
+.stats_container>div {
+    margin: auto;
+    width: 50%;
+    padding: 0.625rem;
+}
+
+/* desktop media query */
+@media (min-width: 36em) {
+    main {
+        display: flex;
+        align-content: center;
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+
+    .main_container {
+        height: 28.0625rem;
+        width: 35.5625rem;
+    }
+
+    .image_container {
+        order: 2;
+    }
+
+    .stats {
+        color: green;
+    }
+
+    .stats_container {
+        display: flex;
+        padding: 0rem;
+        margin-top: 5rem;
+        margin-right: 10rem;
+        justify-content: space-evenly;
+    }
+
+    .stats_container>div {
+        margin: 0rem;
+        width: 10%;
+        padding: 0rem;
+    }
+
+    #main_header {
+        width: 24.1875rem;
+        padding: 0rem;
+        margin: 2.5rem 7.8125rem 1.25rem 4.375rem;
+        text-align: initial;
+    }
+
+    #main_paragraph {
+        height: 4.8125rem;
+        width: 23.875rem;
+        margin: 0.625rem 7.8125rem 2.5rem 4.375rem;
+        text-align: initial;
+    }
+
+    #responsive_img {
+        max-width: none;
+        border-top-left-radius: 0rem;
+        border-bottom-right-radius: 0.625rem;
+    }
+}
